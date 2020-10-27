@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+.main {
+    background: aquamarine;
+    margin: auto;
+    width: 350px;
+    margin-top: 80px;
+    box-shadow: 17px -13px #4cd4951c;
+    border: 1px solid darkgoldenrod;
+    
+
+}
+h3{
+    color: blueviolet;
+}
+/* animation*/
+.span{
+   color: black;
+   position: relative;
+}
+
+.span:nth-child(1){animation:fade 3s infinite 200ms;}
+
+.span:nth-child(2){animation:fade 3s infinite 400ms;}
+
+.span:nth-child(3){animation:fade 3s infinite 600ms;}
+
+.span:nth-child(4){animation:fade 3s infinite 800ms;}
+
+.span:nth-child(5){animation:fade 3s infinite 1000ms;}
+
+.span:nth-child(6){animation:fade 3s infinite 1200ms;}
+
+.span:nth-child(7){animation:fade 3s infinite 1300ms;}
+
+.span:nth-child(8){animation:fade 3s infinite 1400ms;}
+
+.span:nth-child(9){animation:fade 3s infinite 1500ms;}
+
+.span:nth-child(10){animation:fade 3s infinite 1600ms;}
+
+
+
+
+@keyframes fade{
+      90%{
+          opacity: 0.02;
+      }
+}
+/* animation finish*/
+form {
+    text-align: center;
+    padding: 30px 0;
+}
+
+input[type="text"] {
+    padding: 10px;
+    border-color: antiquewhite;
+    outline: none;
+}
+
+input[type="email"] {
+    padding: 10px;
+    border-color: antiquewhite;
+    outline: none;
+}
+
+input[type="password"] {
+    padding: 10px;
+    border-color: antiquewhite;
+    outline: none;
+}
+
+button {
+    padding: 7px;
+    width: 80px;
+    border-color: aliceblue;
+    
+}
+    </style>
+</head>
+<body>
+    <div class="main">
+    <form name='myform' onsubmit=" return validate()" action="wlcm.html" >
+        <h3 >Form <span class="span"> v</span> 
+                  <span class="span"> a</span>
+                  <span class="span"> l</span>
+                  <span class="span"> i</span>
+                  <span class="span"> d</span>
+                  <span class="span"> a</span>
+                  <span class="span"> t</span>
+                  <span class="span"> i</span>
+                  <span class="span"> o</span>
+                  <span class="span"> n</span>
+                  
+        </h3> 
+
+        <input name="name" type="text" placeholder="Enter your  Name" ><br>
+        <label id="nm" style="visibility: hidden;color:red">Please enter your name</label><br>
+        
+        
+        <input name="email" type="email" placeholder="Enter your  email" ><br>
+        <label id="mnm" style="visibility: hidden;color:red">Please enter your email</label><br>
+        
+       
+
+        <input name="password" type="password" placeholder="Enter your password" ><br>
+        <label id="mn" style="visibility: hidden;color:red">Please enter your password</label><br><br>
+       
+
+      
+
+      
+
+       <button type="submit">Submit</button>
+
+        
+
+    </form>
+</div>
+
+<script src="app.js"></script>
+
+</body>
+</html>
